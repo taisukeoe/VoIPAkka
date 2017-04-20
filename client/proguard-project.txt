@@ -1,0 +1,58 @@
+-dontwarn
+-ignorewarnings
+-dontnote
+
+# For your own classes
+## You have to list your classes extending akka classes, which are instantiated by reflection or conf file at least.
+-keep class com.taisukeoe.** { *; }
+
+# Akka configuration
+# Akka 2.3.16
+## for akka.actor
+### Classes used in reference.conf
+#### akka.actor.provider
+-keep class akka.actor.LocalActorRefProvider { *; }
+
+#### akka.actor.guardian-supervisor-strategy
+-keep class akka.actor.DefaultSupervisorStrategy { *; }
+
+#### akka.actor.mailbox
+-keep class akka.dispatch.UnboundedMailbox { *; }
+-keep class akka.dispatch.BoundedMailbox { *; }
+-keep class akka.dispatch.UnboundedDequeBasedMailbox { *; }
+-keep class akka.dispatch.BoundedDequeBasedMailbox { *; }
+
+#### akka.actor.mailbox.requirements
+-keep class akka.dispatch.BoundedDequeBasedMessageQueueSemantics { *; }
+-keep class akka.dispatch.UnboundedMessageQueueSemantics { *; }
+-keep class akka.dispatch.UnboundedDequeBasedMessageQueueSemantics { *; }
+-keep class akka.dispatch.DequeBasedMessageQueueSemantics { *; }
+-keep class akka.dispatch.MultipleConsumerSemantics { *; }
+
+#### akka.scheduler.implementation
+-keep class akka.actor.LightArrayRevolverScheduler { *; }
+
+#### akka.loggers
+-keep class akka.event.Logging$DefaultLogger { *; }
+-keep class akka.event.Logging$LogExt { *; }
+
+### Classes used via reflection
+-keep class akka.actor.CreatorFunctionConsumer { *; }
+-keep class akka.actor.TypedCreatorFunctionConsumer { *; }
+-keep class akka.actor.LocalActorRefProvider$Guardian { *; }
+-keep class akka.actor.LocalActorRefProvider$SystemGuardian { *; }
+-keep class akka.actor.dsl.Inbox$InboxActor { *; }
+-keep class akka.routing.RoutedActorCell$CollectRouteeRefs { *; }
+-keep class akka.routing.RoutedActorCell$RouterActorCreator { *; }
+
+## for akka.io
+### Classes used via reflection
+-keep class akka.io.TcpIncomingConnection { *; }
+-keep class akka.io.TcpOutgoingConnection { *; }
+-keep class akka.io.TcpManager { *; }
+-keep class akka.io.TcpListener { *; }
+-keep class akka.io.UdpManager { *; }
+-keep class akka.io.UdpConnection { *; }
+-keep class akka.io.UdpConnectedManager { *; }
+-keep class akka.io.UdpSender { *; }
+-keep class akka.io.SelectionHandler { *; }
