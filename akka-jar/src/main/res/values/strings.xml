@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">VoIP Akka Sample</string>
-  <string name="hello">Hello Android Akka!</string>
-  <string name="ptt">Push To Talk</string>
-  <string name="connect">Connect</string>
+  <string name="app_name">Akka Jar sample</string>
+  <string name="hello">Akka Jar sample</string>
 </resources>

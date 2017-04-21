@@ -43,7 +43,7 @@ class MainActivity extends Activity {
       startService(startIntent)
     }
 
-    this.findView(TR.ptt).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener {
+    this.findView(TR.toggle_mic).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener {
       override def onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean): Unit =
         if (isChecked)
           startService(intent(VoIPService.ACTION_ACTIVATE_TALK))

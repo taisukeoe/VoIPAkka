@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">VoIP Akka Sample</string>
-  <string name="hello">Hello Android Akka!</string>
-  <string name="ptt">Push To Talk</string>
-  <string name="connect">Connect</string>
+    <string name="app_name">VoIP Akka Sample</string>
+    <string name="hello">Hello Android Akka!</string>
+    <string name="title_status">Status</string>
+    <string name="connect">Connect</string>
+    <string name="title_ip_address">IP address</string>
+    <string name="ip_address">172.20.10.6</string>
+    <string name="title_port">Port</string>
+    <string name="port">1234</string>
+    <string name="title_mic">Mic</string>
 </resources>
