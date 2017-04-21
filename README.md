@@ -22,6 +22,16 @@ This repository consists of three parts:
 
 If you want to use VoIP server, please choose `UDPVoIPServer` in `6.` above, launch and connect two Android Devices into your local server.
 
+# What this demo misses.
+Disclaimer: This app is just for demo and samples for Android Scala & Akka.
+Please be noted it's not production level VoIP project at all.
+
+To make a production-level VoIP system, you'll have to consider the following at least.
+* Audio quality improvement
+* Performance tuning (Encoder/Decoder, Dispatcher, Mailbox, Memory usage, etc.)
+* Resiliency
+
+
 # LICENSE
 
 Copyright 2017 Taisuke Oe
