@@ -16,7 +16,7 @@ class MainActivity extends Activity {
   private var receiver: Option[BroadcastReceiver] = None
   private lazy val recordRequestCode = 1234
 
-  override def onCreate(savedInstanceState: Bundle) {
+  override def onCreate(savedInstanceState: Bundle):Unit = {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.main)
 
